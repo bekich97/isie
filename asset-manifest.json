@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/isie/static/css/main.fb8466d8.css",
+    "main.js": "/isie/static/js/main.1ef97aca.js",
+    "static/media/service3.png": "/isie/static/media/service3.239309751e1bc3a6571a.png",
+    "static/media/MaterialIcons-Regular.ttf": "/isie/static/media/MaterialIcons-Regular.acc68ecf58426f6dac95.ttf",
+    "static/media/MaterialIconsOutlined-Regular.otf": "/isie/static/media/MaterialIconsOutlined-Regular.83fe2f4f94b6ce99187f.otf",
+    "static/media/service6.png": "/isie/static/media/service6.ae0fa17389278f9fe93d.png",
+    "static/media/service4.png": "/isie/static/media/service4.655b4aa035e9bde27cda.png",
+    "static/media/service1.png": "/isie/static/media/service1.a9d1b8e8adc8093f387b.png",
+    "static/media/service5.png": "/isie/static/media/service5.38bf8915e25bcb41408c.png",
+    "static/media/service2.png": "/isie/static/media/service2.28ecb74dd6387b4629cb.png",
+    "index.html": "/isie/index.html",
+    "main.fb8466d8.css.map": "/isie/static/css/main.fb8466d8.css.map",
+    "main.1ef97aca.js.map": "/isie/static/js/main.1ef97aca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb8466d8.css",
+    "static/js/main.1ef97aca.js"
+  ]
+}
