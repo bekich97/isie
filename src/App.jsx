@@ -29,7 +29,7 @@ function App() {
       </section>
       <div className="content">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/isie" element={<Home />} />
           <Route path="/my-profile" element={<MyProfile />} />
           <Route path="/p/:nickname" element={<Profile />} />
           {/* Auth routes */}
