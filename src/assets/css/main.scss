@@ -1,0 +1,12 @@
+@import "./header.scss";
+@import "./home.scss";
+@import "./footer.scss";
+@import "./animations.scss";
+
+.container {
+  max-width: 1500px !important;
+}
+
+// @media (min-width: 1400px) {
+//     @import './header.scss';
+// }

@@ -1,0 +1,79 @@
+$max: 200;
+$offset: 1;
+$unit: 'px';
+
+@mixin spacing($className, $styleName) {
+  $i: 1;
+  $j: 1;
+
+  @while $i <= $max {
+    #{$className + $j} {
+      #{$styleName}: #{$i + $unit} !important;
+    }
+
+    $i: $i+$offset;
+    $j: $j + 1;
+  }
+}
+
+@mixin spacingh($className, $styleName) {
+    $i: 1;
+    $j: 1;
+  
+    @while $i <= $max {
+      @if $className == 'margin'{
+        #{$className + $j} {
+            #{"margin-right"}: #{$i + $unit} !important;
+            #{"margin-left"}: #{$i + $unit} !important;
+        }
+      } @else {
+        #{$className + $j} {
+            #{"padding-right"}: #{$i + $unit} !important;
+            #{"padding-left"}: #{$i + $unit} !important;
+        }
+      }
+  
+      $i: $i+$offset;
+      $j: $j + 1;
+    }
+  }
+
+  @mixin spacingv($className, $styleName) {
+    $i: 1;
+    $j: 1;
+  
+    @while $i <= $max {
+        @if $className == 'margin'{
+            #{$className + $j} {
+                #{"margin-top"}: #{$i + $unit} !important;
+                #{"margin-bottom"}: #{$i + $unit} !important;
+            }
+          } @else {
+            #{$className + $j} {
+                #{"padding-top"}: #{$i + $unit} !important;
+                #{"padding-bottom"}: #{$i + $unit} !important;
+            }
+          }
+  
+      $i: $i+$offset;
+      $j: $j + 1;
+    }
+  }
+
+// margins
+@include spacing('.m-', 'margin');
+@include spacing('.ml-', 'margin-left');
+@include spacing('.mr-', 'margin-right');
+@include spacing('.mt-', 'margin-top');
+@include spacing('.mb-', 'margin-bottom');
+@include spacingh('.mx-', 'margin');
+@include spacingv('.my-', 'margin');
+
+// paddings
+@include spacing('.p-', 'padding');
+@include spacing('.pl-', 'padding-left');
+@include spacing('.pr-', 'padding-right');
+@include spacing('.pt-', 'padding-top');
+@include spacing('.pb-', 'padding-bottom');
+@include spacingh('.px-', 'padding');
+@include spacingv('.py-', 'padding');
